@@ -159,15 +159,15 @@
 
         <figure>
           <img src="images\bad_cop_FINAL.png" alt="Heat Map of New York City showing precincts with the most complaints correlate to the neighborhoods with the most concentrated African American population" width = "959" height = "511" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>Heat Map of New York City showing the relationship between number of complaints and African American population</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Redundant Coloring (-1): Using the same colormap across both heatmaps suggests a direct equivalence between the two variables measured. While it helps the viewer visually compare the maps, it reinforces correlations which misleadingly implies the constructs are linked.</li>
+          <li>Normalized Color Bins (-2): By normalizing both variables to percentiles and applying the same color bin thresholds the maps appear mmore directly comparable. The choice enhances the persuasive nature, but masks the raw scale differences, in our case counts versus percentages.</li>
+          <li>Map of NYC (+1): Utilizing the spatial boundaries of New York City allows the viewer to meaningfully tie the statistics to local areas. The geographic areas, neighborhoods and precincts, makes for a persuasive frame without misconstruing data.</li>
         </ul>
       </section>
 
@@ -176,15 +176,15 @@
 
         <figure>
           <img src="images\good_cop_FINAL.png" alt="Line Plot showing that complaints lodged by African Americans against the NYPD have descreased over time from 2016-2020" width = "692" height = "301"/>
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>Line plot showing the number of complaints lodged by African Americans against the NYPD decrease from 2016 to 2020</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Filtering for Only African American Complaints (-1): Focusing solely on complaints lodged by African Americans allows for the experience of a particular community to be told. However, purpsefully omitting complaints from other groups masks the overall scale of misconduct, while also exxagerating the decline in complaints.</li>
+          <li>Limiting the Timeframe (-2): Restricting the timeframe to a five year window starting in 2016 allows for the downward trend to appear more significant. By focusing on this reduction the graph lacks historical context, and the line plot does not communicate the significance events of this period, for example the pandemic in 2019.</li>
+          <li>Plotting Raw Complaints (0): Using absolute complaints, while showing the true population behavior, does not account for shifts in the population or reporting fatigue.</li>
         </ul>
       </section>
 
